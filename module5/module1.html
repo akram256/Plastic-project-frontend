@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plastic Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Plastic product design and development</h1>
+<!-- MultiStep Form -->
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Module 1</li>
+                <li>Sub-Module 1</li>
+                <li>Sub-Module 2</li>
+                <li>Sub-Module 3</li>
+                <li>Sub-Module 4</li>
+                <li>Sub_Module 5 </li>
+                <!-- <li>Sub-Module 6</li> -->
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Submodule one</h2>
+                <h3 class="fs-subtitle">Tell us something more about you</h3>
+                <input class="fs-subtitle" type="checkbox" name="Tell me about yourself."/> 
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+            <fieldset>
+                <h2 class="fs-title">Sub-module two</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="checkbox" name="Tell me about yourself." value="Tell me about yourself."/> 
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Sub-module three</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Sub-module four</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Sub-module five</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            
+            <fieldset>
+                <h2 class="fs-title">Create your account</h2>
+                <h3 class="fs-subtitle">Fill in your credentials</h3>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+            </fieldset>
+
+        </form>
+        <!-- link to designify.me code snippets -->
+        <div class="dme_link">
+            <p><a href="module2.html" target="_blank">Lets get Started</a></p>
+        </div>
+        <!-- /.link to designify.me code snippets -->
+    </div>
+</div>
+<!-- /.MultiStep Form -->
+<script type="text/javascript" src="jquery.js"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
