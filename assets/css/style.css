@@ -68,6 +68,54 @@ body {
     -moz-transition: All 0.5s ease-in;
     -o-transition: All 0.5s ease-in;
 }
+#msform .form-group{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 30px 0px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+}
+#msform .form-group #radio{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.form-group input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form-group input:checked ~ .checkmark:after {
+  display: block;
+}
+.form-group .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
 
 /*buttons*/
 #msform .action-button {
@@ -104,7 +152,7 @@ body {
 
 /*headings*/
 .fs-title {
-    font-size: 18px;
+    font-size: 25px;
     text-transform: uppercase;
     color: #2C3E50;
     margin-bottom: 10px;
@@ -114,7 +162,7 @@ body {
 
 .fs-subtitle {
     font-weight: normal;
-    font-size: 13px;
+    font-size: 18px;
     color: #666;
     margin-bottom: 20px;
 }
@@ -132,11 +180,10 @@ body {
     color: white;
     text-transform: uppercase;
     font-size: 9px;
-    width: 16.2%;
+    width: 12.5%;
     float: left;
     position: relative;
     letter-spacing: 1px;
-    margin-left: 7px;
 }
 
 #progressbar li:before {
